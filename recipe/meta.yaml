@@ -1,5 +1,5 @@
 {% set name = "opentofu" %}
-{% set version = "1.6.2" %}
+{% set version = "1.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/opentofu/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 3bf0fc807004ba26305331ecf1334ff2160f8c131ee53c107292d60069400da6
+  sha256: 04f43bc496adc3dfe5ca39121355ed5c12b5b1f3b2cceedf1aae3382bceecefc
 
 build:
   number: 0
@@ -30,7 +30,7 @@ test:
 about:
   home: https://www.opentofu.org
   license: MPL-2.0
-  license_file: 
+  license_file:
     - LICENSE
     - license-files/
   summary: OpenTofu lets you declaratively manage your cloud infrastructure.
