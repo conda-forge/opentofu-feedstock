@@ -10,7 +10,7 @@ source:
   sha256: 07613c3b7d6c0a7c3ede29da6a4f33d764420326c07a1c41e52e215428858ef4
 
 build:
-  number: 0
+  number: 1
   script:
     - pushd cmd/tofu  # [not win]
     - go build -v -ldflags "-w -s -X 'github.com/opentofu/opentofu/version.dev=no'" -o $PREFIX/bin/tofu  # [not win]
