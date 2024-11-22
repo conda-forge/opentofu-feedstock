@@ -1,5 +1,5 @@
 {% set name = "opentofu" %}
-{% set version = "1.8.5" %}
+{% set version = "1.8.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/opentofu/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 07613c3b7d6c0a7c3ede29da6a4f33d764420326c07a1c41e52e215428858ef4
+  sha256: ee1ffaf26b4849dfcfbbc896624c7fafdc4982ad60bc2fa3b0826d0dfd2ef7f7
 
 build:
-  number: 1
+  number: 0
   script:
     - pushd cmd/tofu  # [not win]
     - go build -v -ldflags "-w -s -X 'github.com/opentofu/opentofu/version.dev=no'" -o $PREFIX/bin/tofu  # [not win]
