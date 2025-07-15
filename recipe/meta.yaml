@@ -1,5 +1,5 @@
 {% set name = "opentofu" %}
-{% set version = "1.10.2" %}
+{% set version = "1.10.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/opentofu/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 442d51e0595e79a3eceb84d8a2891e691f7277d0da7dd34f87836692d4aeca91
+  sha256: 2279dbe3823282b7646d321106b43842203606b4eeddc1a1d3b9de51cdf74953
 
 build:
   number: 0
