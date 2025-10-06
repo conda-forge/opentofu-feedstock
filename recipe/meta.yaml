@@ -10,7 +10,7 @@ source:
     sha256: efa95ba022d05a4cdc983d06007f389bd3ff50557b58309b9a22af52292a589a
   - url: https://raw.githubusercontent.com/jmespath/go-jmespath/b89213a6ec69212a244ef0d07d893bef7f2d9091/LICENSE
     sha256: e4855d38fa4a5c43945b62f0731836851d055bc200f42631f0854e75fdefe77c
-    file_name: LICENSE-jmespath
+    fn: LICENSE-jmespath
 
 build:
   number: 0
