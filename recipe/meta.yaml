@@ -6,8 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/opentofu/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: efa95ba022d05a4cdc983d06007f389bd3ff50557b58309b9a22af52292a589a
+  - url: https://github.com/opentofu/{{ name }}/archive/v{{ version }}.tar.gz
+    sha256: efa95ba022d05a4cdc983d06007f389bd3ff50557b58309b9a22af52292a589a
+  - url: https://raw.githubusercontent.com/jmespath/go-jmespath/b89213a6ec69212a244ef0d07d893bef7f2d9091/LICENSE
+    sha256: cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30
+    fn: LICENSE-jmespath
 
 build:
   number: 0
@@ -16,8 +19,7 @@ build:
     - go build -v -ldflags "-w -s -X 'github.com/opentofu/opentofu/version.dev=no'" -o $PREFIX/bin/tofu  # [not win]
     - cd cmd\tofu  # [win]
     - go build -v -ldflags "-w -s -X 'github.com/opentofu/opentofu/version.dev=no'" -o %LIBRARY_PREFIX%\bin\tofu.exe  # [win]
-    - go-licenses save . --save_path=../../license-files --ignore github.com/opentofu/opentofu
-
+    - go-licenses save . --save_path=../../license-files --ignore github.com/opentofu/opentofu --ignore github.com/jmespath/go-jmespath
 requirements:
   build:
     - {{ compiler('go-nocgo') }}
@@ -39,3 +41,4 @@ about:
 extra:
   recipe-maintainers:
     - xhochy
+    - nick-harmening
