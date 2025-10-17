@@ -6,8 +6,6 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/opentofu/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: c6712629ef05f461d72c158de32bd009c29844a21bbcfa7bd7f582a341267f29
   - url: https://github.com/opentofu/{{ name }}/archive/v{{ version }}.tar.gz
     sha256: c6712629ef05f461d72c158de32bd009c29844a21bbcfa7bd7f582a341267f29
   - url: https://raw.githubusercontent.com/jmespath/go-jmespath/b89213a6ec69212a244ef0d07d893bef7f2d9091/LICENSE
