@@ -1,5 +1,5 @@
 {% set name = "opentofu" %}
-{% set version = "1.11.5" %}
+{% set version = "1.11.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/opentofu/{{ name }}/archive/v{{ version }}.tar.gz
-    sha256: 450f962f262d9f484ad1fb73454650740cdce0d83a854ad8b6c183cc5822eb09
+    sha256: 4c16aaac1c8db7386488abb13226f93fed4141698d0ebc02711029e6d6676a82
   - url: https://raw.githubusercontent.com/jmespath/go-jmespath/b89213a6ec69212a244ef0d07d893bef7f2d9091/LICENSE
     sha256: cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30
     fn: LICENSE-jmespath
