@@ -3,7 +3,7 @@ About opentofu-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/opentofu-feedstock/blob/main/LICENSE.txt)
 
-Home: https://www.opentofu.org
+Home: https://www.opentofu.org/
 
 Package license: MPL-2.0
 
@@ -40,6 +40,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22064&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opentofu-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22064&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/opentofu-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
