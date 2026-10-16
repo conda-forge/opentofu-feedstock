@@ -34,7 +34,7 @@ requirements:
 
 tests:
   - script:
-      - tofu -v
+      - tofu version
 
 about:
   license: MPL-2.0
