@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: opentofu
-  version: "1.13.1"
+  version: "1.13.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   - url: https://github.com/opentofu/${{ name }}/archive/v${{ version }}.tar.gz
-    sha256: 54c534f3d1df253430cc02220d94b91c1d563e95f040bc24d29a4c45bc197838
+    sha256: ea26bb64b303701fee619b7f28422459be9ff04ee87c5491d046022e1c24f499
 
 build:
   number: 0
